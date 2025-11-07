@@ -15,7 +15,7 @@
     .main1 {
       width: 100vw;
       height: 100vh;
-      background-color: blueviolet;
+      position: relative; /* ← Add this */
     }
     #main1_image {
       width: 100vw;
@@ -75,6 +75,48 @@
       bottom: 5px;
       color: red;
     }
+        .main2 {
+      width: 100vw;
+      height: 100vh;
+      background-color: rgb(13, 13, 14);
+      position: relative; /* ← Add this */
+    }
+    .sub21{
+  width: 40vw;
+  height: 40vh;
+  position: absolute;
+  left: 5vw; 
+  top: 30vh;   /* ← Add this line */
+  color:wheat;
+  padding: 20px; /* optional, looks better */
+  font-size:x-large;
+    }
+    .sub22{
+      width: 50vw;
+      height: 100vh;
+      position: absolute;
+      right: 0vh;
+      margin: 0;
+      background-color: blueviolet; 
+    }
+    .sub22 img{
+            width: 50vw;
+      height: 100vh;
+    }
+    .sub23{
+        width: 100vw;
+      height: 100vh;
+      position: absolute;
+      left: -100vw;
+    }
+    .sub23 img{
+              width: 100vw;
+      height: 100vh;
+    }
+    .main2:hover .sub23{
+      left: -50vw;
+transition: all 3s ease-in-out;
+    }
   </style>
   <body>
     <div class="main1">
@@ -111,6 +153,19 @@
       <div class="sub14">
         <h1>Bugatti <span>Veyron</span></h1>
       </div>
+    </div>
+    <div class="main2">
+        <div class="sub21">
+          <h2>Bugatti Veyron</h2>
+          <p>The bodyshell of this GRAND SPORT is decorated with a design made up of mathematical and scientific formulas that are inspired by the speed of the car. They explode outward from the front of the vehicle, extending over the wings and up the sides. The rusty color of the formulas, which can also be found in the interior, refers to a series of successful sculptural works by Venet. The BUGATTI designers created special stencils and used them to individually add the formulas to the exterior of the car. Several layers of lacquer were then added to achieve the perfect surface characteristic of a BUGATTI. In the car interior, the formulas were embroidered into the materials – an outstanding example of master craftsmanship.</p>
+          
+        </div>
+        <div class="sub22">
+            <img src="https://i.pinimg.com/736x/be/8a/fc/be8afca5558b3e3b628c7ca451b4d30d.jpg" alt="">
+        </div>
+        <div class="sub23">
+          <img src="https://cdna.artstation.com/p/assets/images/images/027/383/850/large/ashu-malik-new-bugati011.jpg?1591373160" alt="">
+        </div>
     </div>
   </body>
 </html>
